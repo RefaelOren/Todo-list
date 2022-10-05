@@ -1,11 +1,5 @@
 body {
-    background: rgb(9, 53, 121);
-    background: linear-gradient(
-        90deg,
-        rgba(9, 53, 121, 0.6445012787723785) 0%,
-        rgba(1, 246, 248, 0.36828644501278773) 100%,
-        rgba(0, 212, 255, 1) 100%
-    );
+    background: rgb(186, 159, 214);
     font-family: cursive;
 }
 
@@ -79,29 +73,16 @@ li button {
 
 .todo-filter {
     padding: 1em;
-    background: rgb(120, 38, 217);
-    background: linear-gradient(
-        90deg,
-        rgba(120, 38, 217, 0.5701492537313433) 37%,
-        rgba(32, 180, 127, 1) 79%,
-        rgba(1, 27, 248, 0.36828644501278773) 100%,
-        rgba(0, 212, 255, 1) 100%
-    );
+    background: rgba(86, 14, 203, 0.523);
     border-radius: 10px;
 }
 
 .stat {
     padding: 0.75em 1em;
-    background: rgb(120, 38, 217);
-    background: linear-gradient(
-        90deg,
-        rgba(120, 38, 217, 0.5701492537313433) 37%,
-        rgba(32, 180, 127, 1) 79%,
-        rgba(1, 27, 248, 0.36828644501278773) 100%,
-        rgba(0, 212, 255, 1) 100%
-    );
+    background: rgba(86, 14, 203, 0.523);
     margin-bottom: 10px;
     border-radius: 10px;
+    color: white;
 }
 
 input {
