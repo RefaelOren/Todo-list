@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Todo MVC</title>
+        <link rel="stylesheet" href="css/main.css" />
+    </head>
+    <body onload="onInit()">
+        <h1>Todo MVC</h1>
+        <section class="todo-filter">
+            <select onchange="onSetFilter(this.value)">
+                <option value="">All</option>
+                <option value="active">Active</option>
+                <option value="done">Done</option>
+            </select>
+            <select onchange="onSetSort(this.value)">
+                <option value="noSort">No sort</option>
+                <option value="txt">Text</option>
+                <option value="createdTime">Created</option>
+                <option value="priority">Priority</option>
+            </select>
+            <input
+                type="text"
+                oninput="onSetFilterByTxt(this.value)"
+                placeholder="Type something..."
+            />
+        </section>
+
+        <section class="todo-list">
+            <h2></h2>
+            <ul></ul>
+        </section>
+        <section class="stat">
+            Total: <span class="total">3</span> Active:
+            <span class="active">2</span>
+        </section>
+        <form onsubmit="onAddTodo(event)">
+            <input type="text" name="txt" placeholder="What todo?" />
+            <input
+                class="priority"
+                type="number"
+                name="priority"
+                min="1"
+                max="3"
+                placeholder="priority?"
+            />
+            <button>Add</button>
+        </form>
+
+        <script src="js/services/storage.service.js"></script>
+        <script src="js/services/todo.service.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>
